@@ -24,3 +24,21 @@ export const CitiesPanelContent = styled.div`
         border-radius: 10px;
     }
 `;
+
+
+export const EmptyData = styled.div`
+    margin: 100px 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: start;
+    font-size: 42px;
+    font-weight: bold;
+    color: ${({ theme }) => theme.colors.brightGrey};
+    width: 100%;
+    height: 100%;
+
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+`;
