@@ -1,6 +1,5 @@
 export default {
   colors: {
-    textWhite: "#F1F3F4",
     gray500: "#424242",
     gray600: "#262626",
     gray700: "#232323",
@@ -13,17 +12,7 @@ export default {
     darkGraphite: "#282828",
     lightGraphite: "#262626",
     brightGrey: "#525355",
-    arsenic: "#3C4043",
-    nero: "#232323",
-    green: "#5BFF62",
-    lighterGreen: "#15f8cf",
-    blueChart: "#03a9f4",
-    blueChartHover: "#0288d1",
     grayOffline: "#C5C4C4",
-    white: "#fff",
-    fontSectionWhite: "#F1F3F4",
-    greenChecked: "#6BF0D0",
-    confirmButton: "#36f9a6",
     cyan: "#15F8CF",
     lightCyan: "#32d18d"
   },

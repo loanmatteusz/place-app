@@ -6,6 +6,10 @@ export const InputContent = styled.input`
     height: 50px;
     font-size: 18px;
 
+    border: none;
+    background-color: ${({ theme }) => theme.colors.lightGraphite};
+    color: white;
+
     &:focus {
         outline: none;
     }
