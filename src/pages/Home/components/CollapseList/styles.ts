@@ -19,8 +19,8 @@ export const Label = styled.p`
 `;
 
 export const Content = styled.div`
+    margin-bottom: 40px;
     display: grid;
-    /* grid-template-rows: 1fr 1fr 1fr; */
     grid-template-columns: 1fr 1fr 1fr;
     width: 100%;
     max-height: 300px;
@@ -29,8 +29,7 @@ export const Content = styled.div`
     overflow-y: scroll;
 
     &::-webkit-scrollbar {
-        width: 5px;
-        height: 100%;
+        width: 0;
     }
 
     @media screen and (max-width: 768px) {

@@ -1,16 +1,7 @@
 import { prepareDataByLetter } from "../../../../utils/prepare-data-by-letter";
-import { LocationProps } from "../../types";
 import { CollapseList } from "../CollapseList";
 import { CitiesPanelContent } from "./styles";
-
-interface CitiesPanelProps {
-    data: LocationProps[];
-}
-
-interface FormatedDataProps {
-    letter: string;
-    cities: string[]
-}
+import { CitiesPanelProps, FormatedDataProps } from "./types";
 
 export const CitiesPanel = ({ data }: CitiesPanelProps) => {
     const formatedData = prepareDataByLetter(data) as FormatedDataProps[];

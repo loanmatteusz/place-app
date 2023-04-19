@@ -10,7 +10,7 @@ export const HomeContent = styled.div`
   max-width: 1024px;
   background-color: ${({ theme }) => theme.colors.gray500};
 
-  padding: 0 20px;
+  padding: 5px 20px;
 `;
 
 export const FlexGroup = styled.div`

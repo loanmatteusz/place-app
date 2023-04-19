@@ -13,6 +13,14 @@ export const CitiesPanelContent = styled.div`
 
     &::-webkit-scrollbar {
         width: 5px;
-        height: 100%;
+    }
+
+    &::-webkit-scrollbar-track {
+        background-color: transparent;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background-color: ${({ theme }) => theme.colors.darkGraphite};
+        border-radius: 10px;
     }
 `;

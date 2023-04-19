@@ -1,9 +1,5 @@
 import { City, CollapseListContent, Content, Label } from "./styles";
-
-interface CollapseListProps {
-    letter: string;
-    cities: string[];
-}
+import { CollapseListProps } from "./types";
 
 export const CollapseList = ({ letter, cities }: CollapseListProps) => {
     return (
