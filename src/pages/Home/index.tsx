@@ -13,21 +13,38 @@ export const Home = () => {
     const states = getAllStates();
     const [state, setState] = useState<string>("PB");
     const allCitiesOfState = getStateCities(state) as LocationProps[];
-    const [citiesByState, setCitiesByState] = useState<any>(allCitiesOfState || []);
+    const [citiesByState, setCitiesByState] = useState<LocationProps[]>(allCitiesOfState || []);
+
+    const [search, setSearch] = useState<string>('');
 
     useEffect(() => {
-        const allCitiesOfState = getStateCities(state) as LocationProps[];
-        setCitiesByState(allCitiesOfState);
-    }, [state]);
+        if (search) {
+            const allCitiesOfState = getStateCities(state) as LocationProps[];
+            const filteredCity = allCitiesOfState.filter(location => location.name.toLocaleLowerCase().includes(search.toLocaleLowerCase()));
+            setCitiesByState(filteredCity);
+        }
+        else {
+            const allCitiesOfState = getStateCities(state) as LocationProps[];
+            setCitiesByState(allCitiesOfState);
+        }
+    }, [state, search]);
 
     return (
         <Layout>
             <HomeContent>
                 <FlexGroup>
-                    <Input />
-                    <Selector states={states} changeState={(value) => setState(value)} />
+                    <Input
+                        value={search}
+                        changeSearch={(value) => setSearch(value)}
+                    />
+                    <Selector
+                        states={states}
+                        changeState={(value) => setState(value)}
+                    />
                 </FlexGroup>
-                <CitiesPanel data={citiesByState} />
+                <CitiesPanel
+                    data={citiesByState}
+                />
             </HomeContent>
         </Layout>
     );
