@@ -6,6 +6,20 @@ export const CollapseListContent = styled.div`
     flex-direction: column;
 `;
 
+export const CollapseBar = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px 0;
+    padding: 0 10px;
+    font-weight: 900;
+    width: 100%;
+    height: 40px;
+    background-color: ${({ theme }) => theme.colors.darkGraphite};
+    border-radius: 5px;
+    color: cyan;
+`;
+
 export const Label = styled.p`
     display: flex;
     flex-direction: column;

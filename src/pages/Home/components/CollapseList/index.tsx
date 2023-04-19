@@ -1,6 +1,6 @@
 import { CardActions, Collapse, IconButton, Theme, Typography, createStyles, makeStyles } from "@material-ui/core";
 import { ExpandMore } from '@material-ui/icons';
-import { City, CollapseListContent, Content, Label } from "./styles";
+import { City, CollapseBar, CollapseListContent, Content, Label } from "./styles";
 import { CollapseListProps } from "./types";
 import { useState } from "react";
 import clsx from "clsx";
@@ -30,7 +30,7 @@ export const CollapseList = ({ letter, cities }: CollapseListProps) => {
 
     return (
         <CollapseListContent key={letter}>
-            <Label>
+            <CollapseBar>
                 <CardActions disableSpacing>
                     <Label>{letter}</Label>
                     <IconButton
@@ -48,7 +48,7 @@ export const CollapseList = ({ letter, cities }: CollapseListProps) => {
                         <ExpandMore />
                     </IconButton>
                 </CardActions>
-            </Label>
+            </CollapseBar>
             <Collapse in={expanded} timeout="auto" unmountOnExit>
                 <Content>
                     {
