@@ -29,11 +29,11 @@ export default createGlobalStyle`
     .MuiTooltip-tooltip {
       padding: 0;
       width: 150px;
-      background-color: ${({ theme }) => theme.colors.arsenic}
+      background-color: ${({ theme }) => theme.colors.blackEerie}
     }
 
     .MuiTooltip-arrow {
-      color: ${({ theme }) => theme.colors.arsenic}
+      color: ${({ theme }) => theme.colors.blackEerie}
     }
   }
 `;
