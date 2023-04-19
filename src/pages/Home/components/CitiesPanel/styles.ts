@@ -32,7 +32,7 @@ export const EmptyData = styled.div`
     flex-direction: column;
     text-align: center;
     justify-content: start;
-    font-size: 42px;
+    font-size: 36px;
     font-weight: bold;
     color: ${({ theme }) => theme.colors.brightGrey};
     width: 100%;

@@ -11,7 +11,7 @@ export const CitiesPanel = ({ data }: CitiesPanelProps) => {
                 formatedData?.map(data => <CollapseList key={data.letter} letter={data.letter} cities={data.cities} />)
             }
             {
-                formatedData?.length === 0 && <EmptyData>Não há nenhuma cidade</EmptyData>
+                formatedData?.length === 0 && <EmptyData>Não há nenhuma cidade que satisfaça a busca</EmptyData>
             }
         </CitiesPanelContent>
     );
