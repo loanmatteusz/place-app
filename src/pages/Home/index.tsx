@@ -18,7 +18,6 @@ export const Home = () => {
     useEffect(() => {
         const allCitiesOfState = getStateCities(state) as LocationProps[];
         setCitiesByState(allCitiesOfState);
-
     }, [state]);
 
     return (

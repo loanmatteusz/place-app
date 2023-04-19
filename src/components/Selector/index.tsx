@@ -7,9 +7,9 @@ export const Selector = ({
     changeState
 }: SelectorProps) => {
     return (
-        <SelectorContent onChange={(state) => changeState(state.target.value)}>
+        <SelectorContent defaultValue={'PB'} onChange={(state) => changeState(state.target.value)}>
             {
-                states?.map(state => <Option key={state.id}>{state.id}</Option> || "PB")
+                states?.map(state => <Option key={state.id}>{state.id}</Option>)
             }
         </SelectorContent>
     );
